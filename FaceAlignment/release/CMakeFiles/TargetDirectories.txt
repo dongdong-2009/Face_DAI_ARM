@@ -1,0 +1,2 @@
+/home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceAlignment/release/CMakeFiles/facea_lib.dir
+/home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceAlignment/release/CMakeFiles/fa_test.dir

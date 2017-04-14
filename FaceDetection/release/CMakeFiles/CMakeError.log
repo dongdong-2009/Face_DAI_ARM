@@ -1,0 +1,458 @@
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceDetection/release/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2621536665/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2621536665.dir/build.make CMakeFiles/cmTryCompileExec2621536665.dir/build
+make[1]: Entering directory `/home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceDetection/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceDetection/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2621536665.dir/src.c.o
+/home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/bin/arm-tanxun-linux-gnueabi/arm-tanxun-linux-gnueabi-gcc   -march=armv7-a -mfloat-abi=hard -mfpu=neon -mtune=cortex-a9 --sysroot=/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi  -O2 -pipe -g -feliminate-unused-debug-types  -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTryCompileExec2621536665.dir/src.c.o   -c /home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceDetection/release/CMakeFiles/CMakeTmp/src.c
+/home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceDetection/release/CMakeFiles/CMakeTmp/src.c:2:17: fatal error: omp.h: No such file or directory
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTryCompileExec2621536665.dir/src.c.o] Error 1
+make[1]: Leaving directory `/home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceDetection/release/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec2621536665/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceDetection/release/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2632430191/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2632430191.dir/build.make CMakeFiles/cmTryCompileExec2632430191.dir/build
+make[1]: Entering directory `/home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceDetection/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceDetection/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2632430191.dir/src.c.o
+/home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/bin/arm-tanxun-linux-gnueabi/arm-tanxun-linux-gnueabi-gcc   -march=armv7-a -mfloat-abi=hard -mfpu=neon -mtune=cortex-a9 --sysroot=/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi  -O2 -pipe -g -feliminate-unused-debug-types  -DOpenMP_FLAG_DETECTED   -o CMakeFiles/cmTryCompileExec2632430191.dir/src.c.o   -c /home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceDetection/release/CMakeFiles/CMakeTmp/src.c
+/home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceDetection/release/CMakeFiles/CMakeTmp/src.c:2:17: fatal error: omp.h: No such file or directory
+compilation terminated.
+make[1]: Leaving directory `/home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceDetection/release/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec2632430191.dir/src.c.o] Error 1
+make: *** [cmTryCompileExec2632430191/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceDetection/release/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1585191159/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1585191159.dir/build.make CMakeFiles/cmTryCompileExec1585191159.dir/build
+make[1]: Entering directory `/home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceDetection/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceDetection/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1585191159.dir/src.c.o
+/home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/bin/arm-tanxun-linux-gnueabi/arm-tanxun-linux-gnueabi-gcc   -march=armv7-a -mfloat-abi=hard -mfpu=neon -mtune=cortex-a9 --sysroot=/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi  -O2 -pipe -g -feliminate-unused-debug-types  -DOpenMP_FLAG_DETECTED /openmp   -o CMakeFiles/cmTryCompileExec1585191159.dir/src.c.o   -c /home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceDetection/release/CMakeFiles/CMakeTmp/src.c
+arm-tanxun-linux-gnueabi-gcc: error: /openmp: No such file or directory
+make[1]: *** [CMakeFiles/cmTryCompileExec1585191159.dir/src.c.o] Error 1
+make[1]: Leaving directory `/home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceDetection/release/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec1585191159/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceDetection/release/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1875148440/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1875148440.dir/build.make CMakeFiles/cmTryCompileExec1875148440.dir/build
+make[1]: Entering directory `/home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceDetection/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceDetection/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1875148440.dir/src.c.o
+/home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/bin/arm-tanxun-linux-gnueabi/arm-tanxun-linux-gnueabi-gcc   -march=armv7-a -mfloat-abi=hard -mfpu=neon -mtune=cortex-a9 --sysroot=/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi  -O2 -pipe -g -feliminate-unused-debug-types  -DOpenMP_FLAG_DETECTED -Qopenmp   -o CMakeFiles/cmTryCompileExec1875148440.dir/src.c.o   -c /home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceDetection/release/CMakeFiles/CMakeTmp/src.c
+arm-tanxun-linux-gnueabi-gcc: error: unrecognized command line option '-Qopenmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec1875148440.dir/src.c.o] Error 1
+make[1]: Leaving directory `/home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceDetection/release/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec1875148440/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceDetection/release/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec3062153124/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3062153124.dir/build.make CMakeFiles/cmTryCompileExec3062153124.dir/build
+make[1]: Entering directory `/home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceDetection/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceDetection/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3062153124.dir/src.c.o
+/home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/bin/arm-tanxun-linux-gnueabi/arm-tanxun-linux-gnueabi-gcc   -march=armv7-a -mfloat-abi=hard -mfpu=neon -mtune=cortex-a9 --sysroot=/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi  -O2 -pipe -g -feliminate-unused-debug-types  -DOpenMP_FLAG_DETECTED -openmp   -o CMakeFiles/cmTryCompileExec3062153124.dir/src.c.o   -c /home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceDetection/release/CMakeFiles/CMakeTmp/src.c
+/home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceDetection/release/CMakeFiles/CMakeTmp/src.c:2:17: fatal error: omp.h: No such file or directory
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTryCompileExec3062153124.dir/src.c.o] Error 1
+make[1]: Leaving directory `/home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceDetection/release/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec3062153124/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceDetection/release/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec562411351/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec562411351.dir/build.make CMakeFiles/cmTryCompileExec562411351.dir/build
+make[1]: Entering directory `/home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceDetection/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceDetection/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec562411351.dir/src.c.o
+/home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/bin/arm-tanxun-linux-gnueabi/arm-tanxun-linux-gnueabi-gcc   -march=armv7-a -mfloat-abi=hard -mfpu=neon -mtune=cortex-a9 --sysroot=/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi  -O2 -pipe -g -feliminate-unused-debug-types  -DOpenMP_FLAG_DETECTED -xopenmp   -o CMakeFiles/cmTryCompileExec562411351.dir/src.c.o   -c /home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceDetection/release/CMakeFiles/CMakeTmp/src.c
+arm-tanxun-linux-gnueabi-gcc: error: language openmp not recognized
+arm-tanxun-linux-gnueabi-gcc: error: language openmp not recognized
+make[1]: *** [CMakeFiles/cmTryCompileExec562411351.dir/src.c.o] Error 1
+make[1]: Leaving directory `/home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceDetection/release/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec562411351/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceDetection/release/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec693517379/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec693517379.dir/build.make CMakeFiles/cmTryCompileExec693517379.dir/build
+make[1]: Entering directory `/home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceDetection/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceDetection/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec693517379.dir/src.c.o
+/home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/bin/arm-tanxun-linux-gnueabi/arm-tanxun-linux-gnueabi-gcc   -march=armv7-a -mfloat-abi=hard -mfpu=neon -mtune=cortex-a9 --sysroot=/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi  -O2 -pipe -g -feliminate-unused-debug-types  -DOpenMP_FLAG_DETECTED +Oopenmp   -o CMakeFiles/cmTryCompileExec693517379.dir/src.c.o   -c /home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceDetection/release/CMakeFiles/CMakeTmp/src.c
+arm-tanxun-linux-gnueabi-gcc: error: +Oopenmp: No such file or directory
+make[1]: Leaving directory `/home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceDetection/release/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec693517379.dir/src.c.o] Error 1
+make: *** [cmTryCompileExec693517379/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceDetection/release/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2525939906/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2525939906.dir/build.make CMakeFiles/cmTryCompileExec2525939906.dir/build
+make[1]: Entering directory `/home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceDetection/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceDetection/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2525939906.dir/src.c.o
+/home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/bin/arm-tanxun-linux-gnueabi/arm-tanxun-linux-gnueabi-gcc   -march=armv7-a -mfloat-abi=hard -mfpu=neon -mtune=cortex-a9 --sysroot=/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi  -O2 -pipe -g -feliminate-unused-debug-types  -DOpenMP_FLAG_DETECTED -qsmp   -o CMakeFiles/cmTryCompileExec2525939906.dir/src.c.o   -c /home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceDetection/release/CMakeFiles/CMakeTmp/src.c
+arm-tanxun-linux-gnueabi-gcc: error: unrecognized command line option '-qsmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec2525939906.dir/src.c.o] Error 1
+make[1]: Leaving directory `/home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceDetection/release/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec2525939906/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceDetection/release/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec3273676035/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3273676035.dir/build.make CMakeFiles/cmTryCompileExec3273676035.dir/build
+make[1]: Entering directory `/home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceDetection/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceDetection/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3273676035.dir/src.c.o
+/home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/bin/arm-tanxun-linux-gnueabi/arm-tanxun-linux-gnueabi-gcc   -march=armv7-a -mfloat-abi=hard -mfpu=neon -mtune=cortex-a9 --sysroot=/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi  -O2 -pipe -g -feliminate-unused-debug-types  -DOpenMP_FLAG_DETECTED -mp   -o CMakeFiles/cmTryCompileExec3273676035.dir/src.c.o   -c /home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceDetection/release/CMakeFiles/CMakeTmp/src.c
+arm-tanxun-linux-gnueabi-gcc: error: unrecognized command line option '-mp'
+make[1]: Leaving directory `/home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceDetection/release/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec3273676035.dir/src.c.o] Error 1
+make: *** [cmTryCompileExec3273676035/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceDetection/release/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2155298304/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2155298304.dir/build.make CMakeFiles/cmTryCompileExec2155298304.dir/build
+make[1]: Entering directory `/home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceDetection/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceDetection/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2155298304.dir/src.cxx.o
+/home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/bin/arm-tanxun-linux-gnueabi/arm-tanxun-linux-gnueabi-g++   -march=armv7-a -mfloat-abi=hard -mfpu=neon -mtune=cortex-a9 --sysroot=/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi   -O2 -pipe -g -feliminate-unused-debug-types  -O2 -mfpu=neon -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTryCompileExec2155298304.dir/src.cxx.o -c /home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceDetection/release/CMakeFiles/CMakeTmp/src.cxx
+/home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceDetection/release/CMakeFiles/CMakeTmp/src.cxx:2:17: fatal error: omp.h: No such file or directory
+compilation terminated.
+make[1]: Leaving directory `/home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceDetection/release/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec2155298304.dir/src.cxx.o] Error 1
+make: *** [cmTryCompileExec2155298304/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceDetection/release/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2421743320/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2421743320.dir/build.make CMakeFiles/cmTryCompileExec2421743320.dir/build
+make[1]: Entering directory `/home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceDetection/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceDetection/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2421743320.dir/src.cxx.o
+/home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/bin/arm-tanxun-linux-gnueabi/arm-tanxun-linux-gnueabi-g++   -march=armv7-a -mfloat-abi=hard -mfpu=neon -mtune=cortex-a9 --sysroot=/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi   -O2 -pipe -g -feliminate-unused-debug-types  -O2 -mfpu=neon -DOpenMP_FLAG_DETECTED   -o CMakeFiles/cmTryCompileExec2421743320.dir/src.cxx.o -c /home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceDetection/release/CMakeFiles/CMakeTmp/src.cxx
+/home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceDetection/release/CMakeFiles/CMakeTmp/src.cxx:2:17: fatal error: omp.h: No such file or directory
+compilation terminated.
+make[1]: Leaving directory `/home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceDetection/release/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec2421743320.dir/src.cxx.o] Error 1
+make: *** [cmTryCompileExec2421743320/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceDetection/release/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec3440476184/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3440476184.dir/build.make CMakeFiles/cmTryCompileExec3440476184.dir/build
+make[1]: Entering directory `/home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceDetection/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceDetection/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3440476184.dir/src.cxx.o
+/home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/bin/arm-tanxun-linux-gnueabi/arm-tanxun-linux-gnueabi-g++   -march=armv7-a -mfloat-abi=hard -mfpu=neon -mtune=cortex-a9 --sysroot=/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi   -O2 -pipe -g -feliminate-unused-debug-types  -O2 -mfpu=neon -DOpenMP_FLAG_DETECTED /openmp   -o CMakeFiles/cmTryCompileExec3440476184.dir/src.cxx.o -c /home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceDetection/release/CMakeFiles/CMakeTmp/src.cxx
+arm-tanxun-linux-gnueabi-g++: error: /openmp: No such file or directory
+make[1]: Leaving directory `/home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceDetection/release/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec3440476184.dir/src.cxx.o] Error 1
+make: *** [cmTryCompileExec3440476184/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceDetection/release/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec3679036291/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3679036291.dir/build.make CMakeFiles/cmTryCompileExec3679036291.dir/build
+make[1]: Entering directory `/home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceDetection/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceDetection/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3679036291.dir/src.cxx.o
+/home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/bin/arm-tanxun-linux-gnueabi/arm-tanxun-linux-gnueabi-g++   -march=armv7-a -mfloat-abi=hard -mfpu=neon -mtune=cortex-a9 --sysroot=/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi   -O2 -pipe -g -feliminate-unused-debug-types  -O2 -mfpu=neon -DOpenMP_FLAG_DETECTED -Qopenmp   -o CMakeFiles/cmTryCompileExec3679036291.dir/src.cxx.o -c /home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceDetection/release/CMakeFiles/CMakeTmp/src.cxx
+arm-tanxun-linux-gnueabi-g++: error: unrecognized command line option '-Qopenmp'
+make[1]: Leaving directory `/home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceDetection/release/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec3679036291.dir/src.cxx.o] Error 1
+make: *** [cmTryCompileExec3679036291/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceDetection/release/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1350042625/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1350042625.dir/build.make CMakeFiles/cmTryCompileExec1350042625.dir/build
+make[1]: Entering directory `/home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceDetection/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceDetection/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec1350042625.dir/src.cxx.o
+/home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/bin/arm-tanxun-linux-gnueabi/arm-tanxun-linux-gnueabi-g++   -march=armv7-a -mfloat-abi=hard -mfpu=neon -mtune=cortex-a9 --sysroot=/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi   -O2 -pipe -g -feliminate-unused-debug-types  -O2 -mfpu=neon -DOpenMP_FLAG_DETECTED -openmp   -o CMakeFiles/cmTryCompileExec1350042625.dir/src.cxx.o -c /home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceDetection/release/CMakeFiles/CMakeTmp/src.cxx
+/home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceDetection/release/CMakeFiles/CMakeTmp/src.cxx:2:17: fatal error: omp.h: No such file or directory
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTryCompileExec1350042625.dir/src.cxx.o] Error 1
+make[1]: Leaving directory `/home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceDetection/release/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec1350042625/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceDetection/release/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec66063484/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec66063484.dir/build.make CMakeFiles/cmTryCompileExec66063484.dir/build
+make[1]: Entering directory `/home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceDetection/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceDetection/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec66063484.dir/src.cxx.o
+/home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/bin/arm-tanxun-linux-gnueabi/arm-tanxun-linux-gnueabi-g++   -march=armv7-a -mfloat-abi=hard -mfpu=neon -mtune=cortex-a9 --sysroot=/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi   -O2 -pipe -g -feliminate-unused-debug-types  -O2 -mfpu=neon -DOpenMP_FLAG_DETECTED -xopenmp   -o CMakeFiles/cmTryCompileExec66063484.dir/src.cxx.o -c /home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceDetection/release/CMakeFiles/CMakeTmp/src.cxx
+arm-tanxun-linux-gnueabi-g++: error: language openmp not recognized
+arm-tanxun-linux-gnueabi-g++: error: language openmp not recognized
+make[1]: *** [CMakeFiles/cmTryCompileExec66063484.dir/src.cxx.o] Error 1
+make[1]: Leaving directory `/home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceDetection/release/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec66063484/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceDetection/release/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2055137604/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2055137604.dir/build.make CMakeFiles/cmTryCompileExec2055137604.dir/build
+make[1]: Entering directory `/home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceDetection/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceDetection/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2055137604.dir/src.cxx.o
+/home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/bin/arm-tanxun-linux-gnueabi/arm-tanxun-linux-gnueabi-g++   -march=armv7-a -mfloat-abi=hard -mfpu=neon -mtune=cortex-a9 --sysroot=/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi   -O2 -pipe -g -feliminate-unused-debug-types  -O2 -mfpu=neon -DOpenMP_FLAG_DETECTED +Oopenmp   -o CMakeFiles/cmTryCompileExec2055137604.dir/src.cxx.o -c /home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceDetection/release/CMakeFiles/CMakeTmp/src.cxx
+arm-tanxun-linux-gnueabi-g++: error: +Oopenmp: No such file or directory
+make[1]: Leaving directory `/home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceDetection/release/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec2055137604.dir/src.cxx.o] Error 1
+make: *** [cmTryCompileExec2055137604/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceDetection/release/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec3135048941/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3135048941.dir/build.make CMakeFiles/cmTryCompileExec3135048941.dir/build
+make[1]: Entering directory `/home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceDetection/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceDetection/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3135048941.dir/src.cxx.o
+/home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/bin/arm-tanxun-linux-gnueabi/arm-tanxun-linux-gnueabi-g++   -march=armv7-a -mfloat-abi=hard -mfpu=neon -mtune=cortex-a9 --sysroot=/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi   -O2 -pipe -g -feliminate-unused-debug-types  -O2 -mfpu=neon -DOpenMP_FLAG_DETECTED -qsmp   -o CMakeFiles/cmTryCompileExec3135048941.dir/src.cxx.o -c /home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceDetection/release/CMakeFiles/CMakeTmp/src.cxx
+arm-tanxun-linux-gnueabi-g++: error: unrecognized command line option '-qsmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec3135048941.dir/src.cxx.o] Error 1
+make[1]: Leaving directory `/home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceDetection/release/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec3135048941/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceDetection/release/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec3141478059/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3141478059.dir/build.make CMakeFiles/cmTryCompileExec3141478059.dir/build
+make[1]: Entering directory `/home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceDetection/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceDetection/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3141478059.dir/src.cxx.o
+/home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/bin/arm-tanxun-linux-gnueabi/arm-tanxun-linux-gnueabi-g++   -march=armv7-a -mfloat-abi=hard -mfpu=neon -mtune=cortex-a9 --sysroot=/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi   -O2 -pipe -g -feliminate-unused-debug-types  -O2 -mfpu=neon -DOpenMP_FLAG_DETECTED -mp   -o CMakeFiles/cmTryCompileExec3141478059.dir/src.cxx.o -c /home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceDetection/release/CMakeFiles/CMakeTmp/src.cxx
+arm-tanxun-linux-gnueabi-g++: error: unrecognized command line option '-mp'
+make[1]: *** [CMakeFiles/cmTryCompileExec3141478059.dir/src.cxx.o] Error 1
+make[1]: Leaving directory `/home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceDetection/release/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec3141478059/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+

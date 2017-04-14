@@ -1,0 +1,2 @@
+/home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceDetection/release/CMakeFiles/faced_lib.dir
+/home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceDetection/release/CMakeFiles/facedet_test.dir

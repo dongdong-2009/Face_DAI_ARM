@@ -1,0 +1,554 @@
+The system is: Linux - 4.4.0-36-generic - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/bin/arm-tanxun-linux-gnueabi/arm-tanxun-linux-gnueabi-gcc -march=armv7-a;-mfloat-abi=hard;-mfpu=neon;-mtune=cortex-a9;--sysroot=/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi
+Build flags: ;-O2;-pipe;-g;-feliminate-unused-debug-types
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceIdentification/release/CMakeFiles/3.2.2/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/bin/arm-tanxun-linux-gnueabi/arm-tanxun-linux-gnueabi-g++ -march=armv7-a;-mfloat-abi=hard;-mfpu=neon;-mtune=cortex-a9;--sysroot=/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi
+Build flags: ;-O2;-pipe;-g;-feliminate-unused-debug-types
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceIdentification/release/CMakeFiles/3.2.2/CompilerIdCXX/a.out"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceIdentification/release/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec4198924684/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4198924684.dir/build.make CMakeFiles/cmTryCompileExec4198924684.dir/build
+make[1]: Entering directory `/home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceIdentification/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceIdentification/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4198924684.dir/testCCompiler.c.o
+/home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/bin/arm-tanxun-linux-gnueabi/arm-tanxun-linux-gnueabi-gcc   -march=armv7-a -mfloat-abi=hard -mfpu=neon -mtune=cortex-a9 --sysroot=/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi  -O2 -pipe -g -feliminate-unused-debug-types     -o CMakeFiles/cmTryCompileExec4198924684.dir/testCCompiler.c.o   -c /home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceIdentification/release/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTryCompileExec4198924684
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4198924684.dir/link.txt --verbose=1
+/home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/bin/arm-tanxun-linux-gnueabi/arm-tanxun-linux-gnueabi-gcc   -march=armv7-a -mfloat-abi=hard -mfpu=neon -mtune=cortex-a9 --sysroot=/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi  -O2 -pipe -g -feliminate-unused-debug-types     -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed  CMakeFiles/cmTryCompileExec4198924684.dir/testCCompiler.c.o  -o cmTryCompileExec4198924684 -rdynamic 
+make[1]: Leaving directory `/home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceIdentification/release/CMakeFiles/CMakeTmp'
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceIdentification/release/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2606206833/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2606206833.dir/build.make CMakeFiles/cmTryCompileExec2606206833.dir/build
+make[1]: Entering directory `/home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceIdentification/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceIdentification/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2606206833.dir/CMakeCCompilerABI.c.o
+/home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/bin/arm-tanxun-linux-gnueabi/arm-tanxun-linux-gnueabi-gcc   -march=armv7-a -mfloat-abi=hard -mfpu=neon -mtune=cortex-a9 --sysroot=/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi  -O2 -pipe -g -feliminate-unused-debug-types     -o CMakeFiles/cmTryCompileExec2606206833.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.2/Modules/CMakeCCompilerABI.c
+Linking C executable cmTryCompileExec2606206833
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2606206833.dir/link.txt --verbose=1
+/home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/bin/arm-tanxun-linux-gnueabi/arm-tanxun-linux-gnueabi-gcc   -march=armv7-a -mfloat-abi=hard -mfpu=neon -mtune=cortex-a9 --sysroot=/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi  -O2 -pipe -g -feliminate-unused-debug-types     -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed -v CMakeFiles/cmTryCompileExec2606206833.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec2606206833 -rdynamic  
+Using built-in specs.
+COLLECT_GCC=/home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/bin/arm-tanxun-linux-gnueabi/arm-tanxun-linux-gnueabi-gcc
+COLLECT_LTO_WRAPPER=/home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/libexec/arm-tanxun-linux-gnueabi/gcc/arm-tanxun-linux-gnueabi/5.2.0/lto-wrapper
+Target: arm-tanxun-linux-gnueabi
+Configured with: /home/vacer/share/fsl-release-bsp/new/tmp/work-shared/gcc-5.2.0-r0/gcc-5.2.0/configure --build=x86_64-linux --host=x86_64-tanxunsdk-linux --target=arm-tanxun-linux-gnueabi --prefix=/opt/fsl-imx-fb/4.1.15-1.1.0/sysroots/x86_64-tanxunsdk-linux/usr --exec_prefix=/opt/fsl-imx-fb/4.1.15-1.1.0/sysroots/x86_64-tanxunsdk-linux/usr --bindir=/opt/fsl-imx-fb/4.1.15-1.1.0/sysroots/x86_64-tanxunsdk-linux/usr/bin/arm-tanxun-linux-gnueabi --sbindir=/opt/fsl-imx-fb/4.1.15-1.1.0/sysroots/x86_64-tanxunsdk-linux/usr/bin/arm-tanxun-linux-gnueabi --libexecdir=/opt/fsl-imx-fb/4.1.15-1.1.0/sysroots/x86_64-tanxunsdk-linux/usr/libexec/arm-tanxun-linux-gnueabi --datadir=/opt/fsl-imx-fb/4.1.15-1.1.0/sysroots/x86_64-tanxunsdk-linux/usr/share --sysconfdir=/opt/fsl-imx-fb/4.1.15-1.1.0/sysroots/x86_64-tanxunsdk-linux/etc --sharedstatedir=/opt/fsl-imx-fb/4.1.15-1.1.0/sysroots/x86_64-tanxunsdk-linux/com --localstatedir=/opt/fsl-imx-fb/4.1.15-1.1.0/sysroots/x86_64-tanxunsdk-linux/var --libdir=/opt/fsl-imx-fb/4.1.15-1.1.0/sysroots/x86_64-tanxunsdk-linux/usr/lib/arm-tanxun-linux-gnueabi --includedir=/opt/fsl-imx-fb/4.1.15-1.1.0/sysroots/x86_64-tanxunsdk-linux/usr/include --oldincludedir=/opt/fsl-imx-fb/4.1.15-1.1.0/sysroots/x86_64-tanxunsdk-linux/usr/include --infodir=/opt/fsl-imx-fb/4.1.15-1.1.0/sysroots/x86_64-tanxunsdk-linux/usr/share/info --mandir=/opt/fsl-imx-fb/4.1.15-1.1.0/sysroots/x86_64-tanxunsdk-linux/usr/share/man --disable-silent-rules --disable-dependency-tracking --with-libtool-sysroot=/home/vacer/share/fsl-release-bsp/new/tmp/sysroots/x86_64-nativesdk-tanxunsdk-linux --with-gnu-ld --enable-shared --enable-languages=c,c++ --enable-threads=posix --enable-multilib --enable-c99 --enable-long-long --enable-symvers=gnu --enable-libstdcxx-pch --program-prefix=arm-tanxun-linux-gnueabi- --without-local-prefix --enable-target-optspace --enable-lto --enable-libssp --disable-bootstrap --disable-libmudflap --with-system-zlib --with-linker-hash-style=gnu --enable-linker-build-id --with-ppl=no --with-cloog=no --enable-checking=release --enable-cheaders=c_global --without-isl --with-gxx-include-dir=/not/exist/usr/include/c++/5.2.0 --with-build-time-tools=/home/vacer/share/fsl-release-bsp/new/tmp/sysroots/x86_64-linux/usr/arm-tanxun-linux-gnueabi/bin --with-sysroot=/not/exist --with-build-sysroot=/home/vacer/share/fsl-release-bsp/new/tmp/sysroots/imx6qsabresd --enable-poison-system-directories --with-mpfr=/home/vacer/share/fsl-release-bsp/new/tmp/sysroots/x86_64-nativesdk-tanxunsdk-linux --with-mpc=/home/vacer/share/fsl-release-bsp/new/tmp/sysroots/x86_64-nativesdk-tanxunsdk-linux --enable-nls --with-arch=armv7-a
+Thread model: posix
+gcc version 5.2.0 (GCC) 
+COMPILER_PATH=/home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/libexec/arm-tanxun-linux-gnueabi/gcc/arm-tanxun-linux-gnueabi/5.2.0/:/home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/libexec/arm-tanxun-linux-gnueabi/gcc/arm-tanxun-linux-gnueabi/5.2.0/:/home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/libexec/arm-tanxun-linux-gnueabi/gcc/arm-tanxun-linux-gnueabi/:/home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/lib/arm-tanxun-linux-gnueabi/gcc/arm-tanxun-linux-gnueabi/5.2.0/:/home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/lib/arm-tanxun-linux-gnueabi/gcc/arm-tanxun-linux-gnueabi/
+LIBRARY_PATH=/home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/lib/arm-tanxun-linux-gnueabi/gcc/arm-tanxun-linux-gnueabi/5.2.0/:/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi/lib/:/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi/usr/lib/arm-tanxun-linux-gnueabi/5.2.0/:/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi/usr/lib/
+COLLECT_GCC_OPTIONS='--sysroot=/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi' '-march=armv7-a' '-mfloat-abi=hard' '-mfpu=neon' '-mtune=cortex-a9' '-O2' '-pipe' '-g' '-feliminate-unused-debug-types' '-v' '-o' 'cmTryCompileExec2606206833' '-rdynamic' '-mtls-dialect=gnu'
+ /home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/libexec/arm-tanxun-linux-gnueabi/gcc/arm-tanxun-linux-gnueabi/5.2.0/collect2 -plugin /home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/libexec/arm-tanxun-linux-gnueabi/gcc/arm-tanxun-linux-gnueabi/5.2.0/liblto_plugin.so -plugin-opt=/home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/libexec/arm-tanxun-linux-gnueabi/gcc/arm-tanxun-linux-gnueabi/5.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccLHjTAv.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi --build-id --eh-frame-hdr --hash-style=gnu -export-dynamic -dynamic-linker /lib/ld-linux-armhf.so.3 -X -m armelf_linux_eabi -o cmTryCompileExec2606206833 /home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi/usr/lib/crt1.o /home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi/usr/lib/crti.o /home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi/usr/lib/arm-tanxun-linux-gnueabi/5.2.0/crtbegin.o -L/home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/lib/arm-tanxun-linux-gnueabi/gcc/arm-tanxun-linux-gnueabi/5.2.0 -L/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi/lib -L/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi/usr/lib/arm-tanxun-linux-gnueabi/5.2.0 -L/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi/usr/lib -O1 --hash-style=gnu --as-needed CMakeFiles/cmTryCompileExec2606206833.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi/usr/lib/arm-tanxun-linux-gnueabi/5.2.0/crtend.o /home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi/usr/lib/crtn.o
+make[1]: Leaving directory `/home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceIdentification/release/CMakeFiles/CMakeTmp'
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceIdentification/release/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTryCompileExec2606206833/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec2606206833.dir/build.make CMakeFiles/cmTryCompileExec2606206833.dir/build]
+  ignore line: [make[1]: Entering directory `/home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceIdentification/release/CMakeFiles/CMakeTmp']
+  ignore line: [/usr/bin/cmake -E cmake_progress_report /home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceIdentification/release/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building C object CMakeFiles/cmTryCompileExec2606206833.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/bin/arm-tanxun-linux-gnueabi/arm-tanxun-linux-gnueabi-gcc   -march=armv7-a -mfloat-abi=hard -mfpu=neon -mtune=cortex-a9 --sysroot=/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi  -O2 -pipe -g -feliminate-unused-debug-types     -o CMakeFiles/cmTryCompileExec2606206833.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.2/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTryCompileExec2606206833]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2606206833.dir/link.txt --verbose=1]
+  ignore line: [/home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/bin/arm-tanxun-linux-gnueabi/arm-tanxun-linux-gnueabi-gcc   -march=armv7-a -mfloat-abi=hard -mfpu=neon -mtune=cortex-a9 --sysroot=/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi  -O2 -pipe -g -feliminate-unused-debug-types     -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed -v CMakeFiles/cmTryCompileExec2606206833.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec2606206833 -rdynamic  ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/bin/arm-tanxun-linux-gnueabi/arm-tanxun-linux-gnueabi-gcc]
+  ignore line: [COLLECT_LTO_WRAPPER=/home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/libexec/arm-tanxun-linux-gnueabi/gcc/arm-tanxun-linux-gnueabi/5.2.0/lto-wrapper]
+  ignore line: [Target: arm-tanxun-linux-gnueabi]
+  ignore line: [Configured with: /home/vacer/share/fsl-release-bsp/new/tmp/work-shared/gcc-5.2.0-r0/gcc-5.2.0/configure --build=x86_64-linux --host=x86_64-tanxunsdk-linux --target=arm-tanxun-linux-gnueabi --prefix=/opt/fsl-imx-fb/4.1.15-1.1.0/sysroots/x86_64-tanxunsdk-linux/usr --exec_prefix=/opt/fsl-imx-fb/4.1.15-1.1.0/sysroots/x86_64-tanxunsdk-linux/usr --bindir=/opt/fsl-imx-fb/4.1.15-1.1.0/sysroots/x86_64-tanxunsdk-linux/usr/bin/arm-tanxun-linux-gnueabi --sbindir=/opt/fsl-imx-fb/4.1.15-1.1.0/sysroots/x86_64-tanxunsdk-linux/usr/bin/arm-tanxun-linux-gnueabi --libexecdir=/opt/fsl-imx-fb/4.1.15-1.1.0/sysroots/x86_64-tanxunsdk-linux/usr/libexec/arm-tanxun-linux-gnueabi --datadir=/opt/fsl-imx-fb/4.1.15-1.1.0/sysroots/x86_64-tanxunsdk-linux/usr/share --sysconfdir=/opt/fsl-imx-fb/4.1.15-1.1.0/sysroots/x86_64-tanxunsdk-linux/etc --sharedstatedir=/opt/fsl-imx-fb/4.1.15-1.1.0/sysroots/x86_64-tanxunsdk-linux/com --localstatedir=/opt/fsl-imx-fb/4.1.15-1.1.0/sysroots/x86_64-tanxunsdk-linux/var --libdir=/opt/fsl-imx-fb/4.1.15-1.1.0/sysroots/x86_64-tanxunsdk-linux/usr/lib/arm-tanxun-linux-gnueabi --includedir=/opt/fsl-imx-fb/4.1.15-1.1.0/sysroots/x86_64-tanxunsdk-linux/usr/include --oldincludedir=/opt/fsl-imx-fb/4.1.15-1.1.0/sysroots/x86_64-tanxunsdk-linux/usr/include --infodir=/opt/fsl-imx-fb/4.1.15-1.1.0/sysroots/x86_64-tanxunsdk-linux/usr/share/info --mandir=/opt/fsl-imx-fb/4.1.15-1.1.0/sysroots/x86_64-tanxunsdk-linux/usr/share/man --disable-silent-rules --disable-dependency-tracking --with-libtool-sysroot=/home/vacer/share/fsl-release-bsp/new/tmp/sysroots/x86_64-nativesdk-tanxunsdk-linux --with-gnu-ld --enable-shared --enable-languages=c,c++ --enable-threads=posix --enable-multilib --enable-c99 --enable-long-long --enable-symvers=gnu --enable-libstdcxx-pch --program-prefix=arm-tanxun-linux-gnueabi- --without-local-prefix --enable-target-optspace --enable-lto --enable-libssp --disable-bootstrap --disable-libmudflap --with-system-zlib --with-linker-hash-style=gnu --enable-linker-build-id --with-ppl=no --with-cloog=no --enable-checking=release --enable-cheaders=c_global --without-isl --with-gxx-include-dir=/not/exist/usr/include/c++/5.2.0 --with-build-time-tools=/home/vacer/share/fsl-release-bsp/new/tmp/sysroots/x86_64-linux/usr/arm-tanxun-linux-gnueabi/bin --with-sysroot=/not/exist --with-build-sysroot=/home/vacer/share/fsl-release-bsp/new/tmp/sysroots/imx6qsabresd --enable-poison-system-directories --with-mpfr=/home/vacer/share/fsl-release-bsp/new/tmp/sysroots/x86_64-nativesdk-tanxunsdk-linux --with-mpc=/home/vacer/share/fsl-release-bsp/new/tmp/sysroots/x86_64-nativesdk-tanxunsdk-linux --enable-nls --with-arch=armv7-a]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 5.2.0 (GCC) ]
+  ignore line: [COMPILER_PATH=/home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/libexec/arm-tanxun-linux-gnueabi/gcc/arm-tanxun-linux-gnueabi/5.2.0/:/home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/libexec/arm-tanxun-linux-gnueabi/gcc/arm-tanxun-linux-gnueabi/5.2.0/:/home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/libexec/arm-tanxun-linux-gnueabi/gcc/arm-tanxun-linux-gnueabi/:/home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/lib/arm-tanxun-linux-gnueabi/gcc/arm-tanxun-linux-gnueabi/5.2.0/:/home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/lib/arm-tanxun-linux-gnueabi/gcc/arm-tanxun-linux-gnueabi/]
+  ignore line: [LIBRARY_PATH=/home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/lib/arm-tanxun-linux-gnueabi/gcc/arm-tanxun-linux-gnueabi/5.2.0/:/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi/lib/:/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi/usr/lib/arm-tanxun-linux-gnueabi/5.2.0/:/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='--sysroot=/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi' '-march=armv7-a' '-mfloat-abi=hard' '-mfpu=neon' '-mtune=cortex-a9' '-O2' '-pipe' '-g' '-feliminate-unused-debug-types' '-v' '-o' 'cmTryCompileExec2606206833' '-rdynamic' '-mtls-dialect=gnu']
+  link line: [ /home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/libexec/arm-tanxun-linux-gnueabi/gcc/arm-tanxun-linux-gnueabi/5.2.0/collect2 -plugin /home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/libexec/arm-tanxun-linux-gnueabi/gcc/arm-tanxun-linux-gnueabi/5.2.0/liblto_plugin.so -plugin-opt=/home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/libexec/arm-tanxun-linux-gnueabi/gcc/arm-tanxun-linux-gnueabi/5.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccLHjTAv.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi --build-id --eh-frame-hdr --hash-style=gnu -export-dynamic -dynamic-linker /lib/ld-linux-armhf.so.3 -X -m armelf_linux_eabi -o cmTryCompileExec2606206833 /home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi/usr/lib/crt1.o /home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi/usr/lib/crti.o /home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi/usr/lib/arm-tanxun-linux-gnueabi/5.2.0/crtbegin.o -L/home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/lib/arm-tanxun-linux-gnueabi/gcc/arm-tanxun-linux-gnueabi/5.2.0 -L/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi/lib -L/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi/usr/lib/arm-tanxun-linux-gnueabi/5.2.0 -L/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi/usr/lib -O1 --hash-style=gnu --as-needed CMakeFiles/cmTryCompileExec2606206833.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi/usr/lib/arm-tanxun-linux-gnueabi/5.2.0/crtend.o /home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi/usr/lib/crtn.o]
+    arg [/home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/libexec/arm-tanxun-linux-gnueabi/gcc/arm-tanxun-linux-gnueabi/5.2.0/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/libexec/arm-tanxun-linux-gnueabi/gcc/arm-tanxun-linux-gnueabi/5.2.0/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/libexec/arm-tanxun-linux-gnueabi/gcc/arm-tanxun-linux-gnueabi/5.2.0/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccLHjTAv.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [--sysroot=/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib/ld-linux-armhf.so.3] ==> ignore
+    arg [-X] ==> ignore
+    arg [-m] ==> ignore
+    arg [armelf_linux_eabi] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTryCompileExec2606206833] ==> ignore
+    arg [/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi/usr/lib/crt1.o] ==> ignore
+    arg [/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi/usr/lib/crti.o] ==> ignore
+    arg [/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi/usr/lib/arm-tanxun-linux-gnueabi/5.2.0/crtbegin.o] ==> ignore
+    arg [-L/home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/lib/arm-tanxun-linux-gnueabi/gcc/arm-tanxun-linux-gnueabi/5.2.0] ==> dir [/home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/lib/arm-tanxun-linux-gnueabi/gcc/arm-tanxun-linux-gnueabi/5.2.0]
+    arg [-L/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi/lib] ==> dir [/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi/lib]
+    arg [-L/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi/usr/lib/arm-tanxun-linux-gnueabi/5.2.0] ==> dir [/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi/usr/lib/arm-tanxun-linux-gnueabi/5.2.0]
+    arg [-L/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi/usr/lib] ==> dir [/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi/usr/lib]
+    arg [-O1] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [CMakeFiles/cmTryCompileExec2606206833.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi/usr/lib/arm-tanxun-linux-gnueabi/5.2.0/crtend.o] ==> ignore
+    arg [/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi/usr/lib/crtn.o] ==> ignore
+  remove lib [gcc]
+  remove lib [gcc_s]
+  remove lib [gcc]
+  remove lib [gcc_s]
+  collapse library dir [/home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/lib/arm-tanxun-linux-gnueabi/gcc/arm-tanxun-linux-gnueabi/5.2.0] ==> [/home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/lib/arm-tanxun-linux-gnueabi/gcc/arm-tanxun-linux-gnueabi/5.2.0]
+  collapse library dir [/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi/lib] ==> [/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi/lib]
+  collapse library dir [/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi/usr/lib/arm-tanxun-linux-gnueabi/5.2.0] ==> [/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi/usr/lib/arm-tanxun-linux-gnueabi/5.2.0]
+  collapse library dir [/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi/usr/lib] ==> [/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi/usr/lib]
+  implicit libs: [c]
+  implicit dirs: [/home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/lib/arm-tanxun-linux-gnueabi/gcc/arm-tanxun-linux-gnueabi/5.2.0;/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi/lib;/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi/usr/lib/arm-tanxun-linux-gnueabi/5.2.0;/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi/usr/lib]
+  implicit fwks: []
+
+
+
+
+Detecting C [-std=c11] compiler features compiled with the following output:
+Change Dir: /home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceIdentification/release/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1565082242/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1565082242.dir/build.make CMakeFiles/cmTryCompileExec1565082242.dir/build
+make[1]: Entering directory `/home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceIdentification/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceIdentification/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1565082242.dir/feature_tests.c.o
+/home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/bin/arm-tanxun-linux-gnueabi/arm-tanxun-linux-gnueabi-gcc   -march=armv7-a -mfloat-abi=hard -mfpu=neon -mtune=cortex-a9 --sysroot=/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi  -O2 -pipe -g -feliminate-unused-debug-types     -std=c11 -o CMakeFiles/cmTryCompileExec1565082242.dir/feature_tests.c.o   -c /home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceIdentification/release/CMakeFiles/feature_tests.c
+Linking C executable cmTryCompileExec1565082242
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1565082242.dir/link.txt --verbose=1
+/home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/bin/arm-tanxun-linux-gnueabi/arm-tanxun-linux-gnueabi-gcc   -march=armv7-a -mfloat-abi=hard -mfpu=neon -mtune=cortex-a9 --sysroot=/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi  -O2 -pipe -g -feliminate-unused-debug-types     -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed  CMakeFiles/cmTryCompileExec1565082242.dir/feature_tests.c.o  -o cmTryCompileExec1565082242 -rdynamic 
+make[1]: Leaving directory `/home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceIdentification/release/CMakeFiles/CMakeTmp'
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:1c_restrict
+    Feature record: C_FEATURE:1c_static_assert
+    Feature record: C_FEATURE:1c_variadic_macros
+
+
+Detecting C [-std=c99] compiler features compiled with the following output:
+Change Dir: /home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceIdentification/release/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec497236194/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec497236194.dir/build.make CMakeFiles/cmTryCompileExec497236194.dir/build
+make[1]: Entering directory `/home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceIdentification/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceIdentification/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec497236194.dir/feature_tests.c.o
+/home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/bin/arm-tanxun-linux-gnueabi/arm-tanxun-linux-gnueabi-gcc   -march=armv7-a -mfloat-abi=hard -mfpu=neon -mtune=cortex-a9 --sysroot=/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi  -O2 -pipe -g -feliminate-unused-debug-types     -std=c99 -o CMakeFiles/cmTryCompileExec497236194.dir/feature_tests.c.o   -c /home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceIdentification/release/CMakeFiles/feature_tests.c
+Linking C executable cmTryCompileExec497236194
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec497236194.dir/link.txt --verbose=1
+/home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/bin/arm-tanxun-linux-gnueabi/arm-tanxun-linux-gnueabi-gcc   -march=armv7-a -mfloat-abi=hard -mfpu=neon -mtune=cortex-a9 --sysroot=/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi  -O2 -pipe -g -feliminate-unused-debug-types     -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed  CMakeFiles/cmTryCompileExec497236194.dir/feature_tests.c.o  -o cmTryCompileExec497236194 -rdynamic 
+make[1]: Leaving directory `/home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceIdentification/release/CMakeFiles/CMakeTmp'
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:1c_restrict
+    Feature record: C_FEATURE:0c_static_assert
+    Feature record: C_FEATURE:1c_variadic_macros
+
+
+Detecting C [-std=c90] compiler features compiled with the following output:
+Change Dir: /home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceIdentification/release/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1621540653/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1621540653.dir/build.make CMakeFiles/cmTryCompileExec1621540653.dir/build
+make[1]: Entering directory `/home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceIdentification/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceIdentification/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1621540653.dir/feature_tests.c.o
+/home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/bin/arm-tanxun-linux-gnueabi/arm-tanxun-linux-gnueabi-gcc   -march=armv7-a -mfloat-abi=hard -mfpu=neon -mtune=cortex-a9 --sysroot=/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi  -O2 -pipe -g -feliminate-unused-debug-types     -std=c90 -o CMakeFiles/cmTryCompileExec1621540653.dir/feature_tests.c.o   -c /home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceIdentification/release/CMakeFiles/feature_tests.c
+Linking C executable cmTryCompileExec1621540653
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1621540653.dir/link.txt --verbose=1
+/home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/bin/arm-tanxun-linux-gnueabi/arm-tanxun-linux-gnueabi-gcc   -march=armv7-a -mfloat-abi=hard -mfpu=neon -mtune=cortex-a9 --sysroot=/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi  -O2 -pipe -g -feliminate-unused-debug-types     -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed  CMakeFiles/cmTryCompileExec1621540653.dir/feature_tests.c.o  -o cmTryCompileExec1621540653 -rdynamic 
+make[1]: Leaving directory `/home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceIdentification/release/CMakeFiles/CMakeTmp'
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:0c_restrict
+    Feature record: C_FEATURE:0c_static_assert
+    Feature record: C_FEATURE:0c_variadic_macros
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceIdentification/release/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2938736371/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2938736371.dir/build.make CMakeFiles/cmTryCompileExec2938736371.dir/build
+make[1]: Entering directory `/home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceIdentification/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceIdentification/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2938736371.dir/testCXXCompiler.cxx.o
+/home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/bin/arm-tanxun-linux-gnueabi/arm-tanxun-linux-gnueabi-g++   -march=armv7-a -mfloat-abi=hard -mfpu=neon -mtune=cortex-a9 --sysroot=/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi   -O2 -pipe -g -feliminate-unused-debug-types     -o CMakeFiles/cmTryCompileExec2938736371.dir/testCXXCompiler.cxx.o -c /home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceIdentification/release/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTryCompileExec2938736371
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2938736371.dir/link.txt --verbose=1
+/home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/bin/arm-tanxun-linux-gnueabi/arm-tanxun-linux-gnueabi-g++   -march=armv7-a -mfloat-abi=hard -mfpu=neon -mtune=cortex-a9 --sysroot=/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi   -O2 -pipe -g -feliminate-unused-debug-types     -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed  CMakeFiles/cmTryCompileExec2938736371.dir/testCXXCompiler.cxx.o  -o cmTryCompileExec2938736371 -rdynamic 
+make[1]: Leaving directory `/home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceIdentification/release/CMakeFiles/CMakeTmp'
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceIdentification/release/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1847070833/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1847070833.dir/build.make CMakeFiles/cmTryCompileExec1847070833.dir/build
+make[1]: Entering directory `/home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceIdentification/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceIdentification/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec1847070833.dir/CMakeCXXCompilerABI.cpp.o
+/home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/bin/arm-tanxun-linux-gnueabi/arm-tanxun-linux-gnueabi-g++   -march=armv7-a -mfloat-abi=hard -mfpu=neon -mtune=cortex-a9 --sysroot=/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi   -O2 -pipe -g -feliminate-unused-debug-types     -o CMakeFiles/cmTryCompileExec1847070833.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.2/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTryCompileExec1847070833
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1847070833.dir/link.txt --verbose=1
+/home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/bin/arm-tanxun-linux-gnueabi/arm-tanxun-linux-gnueabi-g++   -march=armv7-a -mfloat-abi=hard -mfpu=neon -mtune=cortex-a9 --sysroot=/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi   -O2 -pipe -g -feliminate-unused-debug-types     -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed -v CMakeFiles/cmTryCompileExec1847070833.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec1847070833 -rdynamic  
+Using built-in specs.
+COLLECT_GCC=/home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/bin/arm-tanxun-linux-gnueabi/arm-tanxun-linux-gnueabi-g++
+COLLECT_LTO_WRAPPER=/home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/libexec/arm-tanxun-linux-gnueabi/gcc/arm-tanxun-linux-gnueabi/5.2.0/lto-wrapper
+Target: arm-tanxun-linux-gnueabi
+Configured with: /home/vacer/share/fsl-release-bsp/new/tmp/work-shared/gcc-5.2.0-r0/gcc-5.2.0/configure --build=x86_64-linux --host=x86_64-tanxunsdk-linux --target=arm-tanxun-linux-gnueabi --prefix=/opt/fsl-imx-fb/4.1.15-1.1.0/sysroots/x86_64-tanxunsdk-linux/usr --exec_prefix=/opt/fsl-imx-fb/4.1.15-1.1.0/sysroots/x86_64-tanxunsdk-linux/usr --bindir=/opt/fsl-imx-fb/4.1.15-1.1.0/sysroots/x86_64-tanxunsdk-linux/usr/bin/arm-tanxun-linux-gnueabi --sbindir=/opt/fsl-imx-fb/4.1.15-1.1.0/sysroots/x86_64-tanxunsdk-linux/usr/bin/arm-tanxun-linux-gnueabi --libexecdir=/opt/fsl-imx-fb/4.1.15-1.1.0/sysroots/x86_64-tanxunsdk-linux/usr/libexec/arm-tanxun-linux-gnueabi --datadir=/opt/fsl-imx-fb/4.1.15-1.1.0/sysroots/x86_64-tanxunsdk-linux/usr/share --sysconfdir=/opt/fsl-imx-fb/4.1.15-1.1.0/sysroots/x86_64-tanxunsdk-linux/etc --sharedstatedir=/opt/fsl-imx-fb/4.1.15-1.1.0/sysroots/x86_64-tanxunsdk-linux/com --localstatedir=/opt/fsl-imx-fb/4.1.15-1.1.0/sysroots/x86_64-tanxunsdk-linux/var --libdir=/opt/fsl-imx-fb/4.1.15-1.1.0/sysroots/x86_64-tanxunsdk-linux/usr/lib/arm-tanxun-linux-gnueabi --includedir=/opt/fsl-imx-fb/4.1.15-1.1.0/sysroots/x86_64-tanxunsdk-linux/usr/include --oldincludedir=/opt/fsl-imx-fb/4.1.15-1.1.0/sysroots/x86_64-tanxunsdk-linux/usr/include --infodir=/opt/fsl-imx-fb/4.1.15-1.1.0/sysroots/x86_64-tanxunsdk-linux/usr/share/info --mandir=/opt/fsl-imx-fb/4.1.15-1.1.0/sysroots/x86_64-tanxunsdk-linux/usr/share/man --disable-silent-rules --disable-dependency-tracking --with-libtool-sysroot=/home/vacer/share/fsl-release-bsp/new/tmp/sysroots/x86_64-nativesdk-tanxunsdk-linux --with-gnu-ld --enable-shared --enable-languages=c,c++ --enable-threads=posix --enable-multilib --enable-c99 --enable-long-long --enable-symvers=gnu --enable-libstdcxx-pch --program-prefix=arm-tanxun-linux-gnueabi- --without-local-prefix --enable-target-optspace --enable-lto --enable-libssp --disable-bootstrap --disable-libmudflap --with-system-zlib --with-linker-hash-style=gnu --enable-linker-build-id --with-ppl=no --with-cloog=no --enable-checking=release --enable-cheaders=c_global --without-isl --with-gxx-include-dir=/not/exist/usr/include/c++/5.2.0 --with-build-time-tools=/home/vacer/share/fsl-release-bsp/new/tmp/sysroots/x86_64-linux/usr/arm-tanxun-linux-gnueabi/bin --with-sysroot=/not/exist --with-build-sysroot=/home/vacer/share/fsl-release-bsp/new/tmp/sysroots/imx6qsabresd --enable-poison-system-directories --with-mpfr=/home/vacer/share/fsl-release-bsp/new/tmp/sysroots/x86_64-nativesdk-tanxunsdk-linux --with-mpc=/home/vacer/share/fsl-release-bsp/new/tmp/sysroots/x86_64-nativesdk-tanxunsdk-linux --enable-nls --with-arch=armv7-a
+Thread model: posix
+gcc version 5.2.0 (GCC) 
+COMPILER_PATH=/home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/libexec/arm-tanxun-linux-gnueabi/gcc/arm-tanxun-linux-gnueabi/5.2.0/:/home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/libexec/arm-tanxun-linux-gnueabi/gcc/arm-tanxun-linux-gnueabi/5.2.0/:/home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/libexec/arm-tanxun-linux-gnueabi/gcc/arm-tanxun-linux-gnueabi/:/home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/lib/arm-tanxun-linux-gnueabi/gcc/arm-tanxun-linux-gnueabi/5.2.0/:/home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/lib/arm-tanxun-linux-gnueabi/gcc/arm-tanxun-linux-gnueabi/
+LIBRARY_PATH=/home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/lib/arm-tanxun-linux-gnueabi/gcc/arm-tanxun-linux-gnueabi/5.2.0/:/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi/lib/:/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi/usr/lib/arm-tanxun-linux-gnueabi/5.2.0/:/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi/usr/lib/
+COLLECT_GCC_OPTIONS='--sysroot=/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi' '-march=armv7-a' '-mfloat-abi=hard' '-mfpu=neon' '-mtune=cortex-a9' '-O2' '-pipe' '-g' '-feliminate-unused-debug-types' '-v' '-o' 'cmTryCompileExec1847070833' '-rdynamic' '-shared-libgcc' '-mtls-dialect=gnu'
+ /home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/libexec/arm-tanxun-linux-gnueabi/gcc/arm-tanxun-linux-gnueabi/5.2.0/collect2 -plugin /home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/libexec/arm-tanxun-linux-gnueabi/gcc/arm-tanxun-linux-gnueabi/5.2.0/liblto_plugin.so -plugin-opt=/home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/libexec/arm-tanxun-linux-gnueabi/gcc/arm-tanxun-linux-gnueabi/5.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccVX9oP0.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi --build-id --eh-frame-hdr --hash-style=gnu -export-dynamic -dynamic-linker /lib/ld-linux-armhf.so.3 -X -m armelf_linux_eabi -o cmTryCompileExec1847070833 /home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi/usr/lib/crt1.o /home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi/usr/lib/crti.o /home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi/usr/lib/arm-tanxun-linux-gnueabi/5.2.0/crtbegin.o -L/home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/lib/arm-tanxun-linux-gnueabi/gcc/arm-tanxun-linux-gnueabi/5.2.0 -L/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi/lib -L/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi/usr/lib/arm-tanxun-linux-gnueabi/5.2.0 -L/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi/usr/lib -O1 --hash-style=gnu --as-needed CMakeFiles/cmTryCompileExec1847070833.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi/usr/lib/arm-tanxun-linux-gnueabi/5.2.0/crtend.o /home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi/usr/lib/crtn.o
+make[1]: Leaving directory `/home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceIdentification/release/CMakeFiles/CMakeTmp'
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceIdentification/release/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTryCompileExec1847070833/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec1847070833.dir/build.make CMakeFiles/cmTryCompileExec1847070833.dir/build]
+  ignore line: [make[1]: Entering directory `/home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceIdentification/release/CMakeFiles/CMakeTmp']
+  ignore line: [/usr/bin/cmake -E cmake_progress_report /home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceIdentification/release/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building CXX object CMakeFiles/cmTryCompileExec1847070833.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/bin/arm-tanxun-linux-gnueabi/arm-tanxun-linux-gnueabi-g++   -march=armv7-a -mfloat-abi=hard -mfpu=neon -mtune=cortex-a9 --sysroot=/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi   -O2 -pipe -g -feliminate-unused-debug-types     -o CMakeFiles/cmTryCompileExec1847070833.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.2/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTryCompileExec1847070833]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1847070833.dir/link.txt --verbose=1]
+  ignore line: [/home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/bin/arm-tanxun-linux-gnueabi/arm-tanxun-linux-gnueabi-g++   -march=armv7-a -mfloat-abi=hard -mfpu=neon -mtune=cortex-a9 --sysroot=/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi   -O2 -pipe -g -feliminate-unused-debug-types     -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed -v CMakeFiles/cmTryCompileExec1847070833.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec1847070833 -rdynamic  ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/bin/arm-tanxun-linux-gnueabi/arm-tanxun-linux-gnueabi-g++]
+  ignore line: [COLLECT_LTO_WRAPPER=/home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/libexec/arm-tanxun-linux-gnueabi/gcc/arm-tanxun-linux-gnueabi/5.2.0/lto-wrapper]
+  ignore line: [Target: arm-tanxun-linux-gnueabi]
+  ignore line: [Configured with: /home/vacer/share/fsl-release-bsp/new/tmp/work-shared/gcc-5.2.0-r0/gcc-5.2.0/configure --build=x86_64-linux --host=x86_64-tanxunsdk-linux --target=arm-tanxun-linux-gnueabi --prefix=/opt/fsl-imx-fb/4.1.15-1.1.0/sysroots/x86_64-tanxunsdk-linux/usr --exec_prefix=/opt/fsl-imx-fb/4.1.15-1.1.0/sysroots/x86_64-tanxunsdk-linux/usr --bindir=/opt/fsl-imx-fb/4.1.15-1.1.0/sysroots/x86_64-tanxunsdk-linux/usr/bin/arm-tanxun-linux-gnueabi --sbindir=/opt/fsl-imx-fb/4.1.15-1.1.0/sysroots/x86_64-tanxunsdk-linux/usr/bin/arm-tanxun-linux-gnueabi --libexecdir=/opt/fsl-imx-fb/4.1.15-1.1.0/sysroots/x86_64-tanxunsdk-linux/usr/libexec/arm-tanxun-linux-gnueabi --datadir=/opt/fsl-imx-fb/4.1.15-1.1.0/sysroots/x86_64-tanxunsdk-linux/usr/share --sysconfdir=/opt/fsl-imx-fb/4.1.15-1.1.0/sysroots/x86_64-tanxunsdk-linux/etc --sharedstatedir=/opt/fsl-imx-fb/4.1.15-1.1.0/sysroots/x86_64-tanxunsdk-linux/com --localstatedir=/opt/fsl-imx-fb/4.1.15-1.1.0/sysroots/x86_64-tanxunsdk-linux/var --libdir=/opt/fsl-imx-fb/4.1.15-1.1.0/sysroots/x86_64-tanxunsdk-linux/usr/lib/arm-tanxun-linux-gnueabi --includedir=/opt/fsl-imx-fb/4.1.15-1.1.0/sysroots/x86_64-tanxunsdk-linux/usr/include --oldincludedir=/opt/fsl-imx-fb/4.1.15-1.1.0/sysroots/x86_64-tanxunsdk-linux/usr/include --infodir=/opt/fsl-imx-fb/4.1.15-1.1.0/sysroots/x86_64-tanxunsdk-linux/usr/share/info --mandir=/opt/fsl-imx-fb/4.1.15-1.1.0/sysroots/x86_64-tanxunsdk-linux/usr/share/man --disable-silent-rules --disable-dependency-tracking --with-libtool-sysroot=/home/vacer/share/fsl-release-bsp/new/tmp/sysroots/x86_64-nativesdk-tanxunsdk-linux --with-gnu-ld --enable-shared --enable-languages=c,c++ --enable-threads=posix --enable-multilib --enable-c99 --enable-long-long --enable-symvers=gnu --enable-libstdcxx-pch --program-prefix=arm-tanxun-linux-gnueabi- --without-local-prefix --enable-target-optspace --enable-lto --enable-libssp --disable-bootstrap --disable-libmudflap --with-system-zlib --with-linker-hash-style=gnu --enable-linker-build-id --with-ppl=no --with-cloog=no --enable-checking=release --enable-cheaders=c_global --without-isl --with-gxx-include-dir=/not/exist/usr/include/c++/5.2.0 --with-build-time-tools=/home/vacer/share/fsl-release-bsp/new/tmp/sysroots/x86_64-linux/usr/arm-tanxun-linux-gnueabi/bin --with-sysroot=/not/exist --with-build-sysroot=/home/vacer/share/fsl-release-bsp/new/tmp/sysroots/imx6qsabresd --enable-poison-system-directories --with-mpfr=/home/vacer/share/fsl-release-bsp/new/tmp/sysroots/x86_64-nativesdk-tanxunsdk-linux --with-mpc=/home/vacer/share/fsl-release-bsp/new/tmp/sysroots/x86_64-nativesdk-tanxunsdk-linux --enable-nls --with-arch=armv7-a]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 5.2.0 (GCC) ]
+  ignore line: [COMPILER_PATH=/home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/libexec/arm-tanxun-linux-gnueabi/gcc/arm-tanxun-linux-gnueabi/5.2.0/:/home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/libexec/arm-tanxun-linux-gnueabi/gcc/arm-tanxun-linux-gnueabi/5.2.0/:/home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/libexec/arm-tanxun-linux-gnueabi/gcc/arm-tanxun-linux-gnueabi/:/home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/lib/arm-tanxun-linux-gnueabi/gcc/arm-tanxun-linux-gnueabi/5.2.0/:/home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/lib/arm-tanxun-linux-gnueabi/gcc/arm-tanxun-linux-gnueabi/]
+  ignore line: [LIBRARY_PATH=/home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/lib/arm-tanxun-linux-gnueabi/gcc/arm-tanxun-linux-gnueabi/5.2.0/:/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi/lib/:/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi/usr/lib/arm-tanxun-linux-gnueabi/5.2.0/:/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='--sysroot=/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi' '-march=armv7-a' '-mfloat-abi=hard' '-mfpu=neon' '-mtune=cortex-a9' '-O2' '-pipe' '-g' '-feliminate-unused-debug-types' '-v' '-o' 'cmTryCompileExec1847070833' '-rdynamic' '-shared-libgcc' '-mtls-dialect=gnu']
+  link line: [ /home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/libexec/arm-tanxun-linux-gnueabi/gcc/arm-tanxun-linux-gnueabi/5.2.0/collect2 -plugin /home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/libexec/arm-tanxun-linux-gnueabi/gcc/arm-tanxun-linux-gnueabi/5.2.0/liblto_plugin.so -plugin-opt=/home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/libexec/arm-tanxun-linux-gnueabi/gcc/arm-tanxun-linux-gnueabi/5.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccVX9oP0.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi --build-id --eh-frame-hdr --hash-style=gnu -export-dynamic -dynamic-linker /lib/ld-linux-armhf.so.3 -X -m armelf_linux_eabi -o cmTryCompileExec1847070833 /home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi/usr/lib/crt1.o /home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi/usr/lib/crti.o /home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi/usr/lib/arm-tanxun-linux-gnueabi/5.2.0/crtbegin.o -L/home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/lib/arm-tanxun-linux-gnueabi/gcc/arm-tanxun-linux-gnueabi/5.2.0 -L/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi/lib -L/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi/usr/lib/arm-tanxun-linux-gnueabi/5.2.0 -L/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi/usr/lib -O1 --hash-style=gnu --as-needed CMakeFiles/cmTryCompileExec1847070833.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi/usr/lib/arm-tanxun-linux-gnueabi/5.2.0/crtend.o /home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi/usr/lib/crtn.o]
+    arg [/home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/libexec/arm-tanxun-linux-gnueabi/gcc/arm-tanxun-linux-gnueabi/5.2.0/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/libexec/arm-tanxun-linux-gnueabi/gcc/arm-tanxun-linux-gnueabi/5.2.0/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/libexec/arm-tanxun-linux-gnueabi/gcc/arm-tanxun-linux-gnueabi/5.2.0/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccVX9oP0.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [--sysroot=/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib/ld-linux-armhf.so.3] ==> ignore
+    arg [-X] ==> ignore
+    arg [-m] ==> ignore
+    arg [armelf_linux_eabi] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTryCompileExec1847070833] ==> ignore
+    arg [/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi/usr/lib/crt1.o] ==> ignore
+    arg [/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi/usr/lib/crti.o] ==> ignore
+    arg [/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi/usr/lib/arm-tanxun-linux-gnueabi/5.2.0/crtbegin.o] ==> ignore
+    arg [-L/home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/lib/arm-tanxun-linux-gnueabi/gcc/arm-tanxun-linux-gnueabi/5.2.0] ==> dir [/home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/lib/arm-tanxun-linux-gnueabi/gcc/arm-tanxun-linux-gnueabi/5.2.0]
+    arg [-L/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi/lib] ==> dir [/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi/lib]
+    arg [-L/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi/usr/lib/arm-tanxun-linux-gnueabi/5.2.0] ==> dir [/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi/usr/lib/arm-tanxun-linux-gnueabi/5.2.0]
+    arg [-L/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi/usr/lib] ==> dir [/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi/usr/lib]
+    arg [-O1] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [CMakeFiles/cmTryCompileExec1847070833.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi/usr/lib/arm-tanxun-linux-gnueabi/5.2.0/crtend.o] ==> ignore
+    arg [/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi/usr/lib/crtn.o] ==> ignore
+  remove lib [gcc_s]
+  remove lib [gcc]
+  remove lib [gcc_s]
+  remove lib [gcc]
+  collapse library dir [/home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/lib/arm-tanxun-linux-gnueabi/gcc/arm-tanxun-linux-gnueabi/5.2.0] ==> [/home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/lib/arm-tanxun-linux-gnueabi/gcc/arm-tanxun-linux-gnueabi/5.2.0]
+  collapse library dir [/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi/lib] ==> [/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi/lib]
+  collapse library dir [/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi/usr/lib/arm-tanxun-linux-gnueabi/5.2.0] ==> [/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi/usr/lib/arm-tanxun-linux-gnueabi/5.2.0]
+  collapse library dir [/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi/usr/lib] ==> [/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi/usr/lib]
+  implicit libs: [stdc++;m;c]
+  implicit dirs: [/home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/lib/arm-tanxun-linux-gnueabi/gcc/arm-tanxun-linux-gnueabi/5.2.0;/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi/lib;/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi/usr/lib/arm-tanxun-linux-gnueabi/5.2.0;/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi/usr/lib]
+  implicit fwks: []
+
+
+
+
+Detecting CXX [-std=c++14] compiler features compiled with the following output:
+Change Dir: /home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceIdentification/release/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec150683121/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec150683121.dir/build.make CMakeFiles/cmTryCompileExec150683121.dir/build
+make[1]: Entering directory `/home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceIdentification/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceIdentification/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec150683121.dir/feature_tests.cxx.o
+/home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/bin/arm-tanxun-linux-gnueabi/arm-tanxun-linux-gnueabi-g++   -march=armv7-a -mfloat-abi=hard -mfpu=neon -mtune=cortex-a9 --sysroot=/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi   -O2 -pipe -g -feliminate-unused-debug-types     -std=c++14 -o CMakeFiles/cmTryCompileExec150683121.dir/feature_tests.cxx.o -c /home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceIdentification/release/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTryCompileExec150683121
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec150683121.dir/link.txt --verbose=1
+/home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/bin/arm-tanxun-linux-gnueabi/arm-tanxun-linux-gnueabi-g++   -march=armv7-a -mfloat-abi=hard -mfpu=neon -mtune=cortex-a9 --sysroot=/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi   -O2 -pipe -g -feliminate-unused-debug-types     -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed  CMakeFiles/cmTryCompileExec150683121.dir/feature_tests.cxx.o  -o cmTryCompileExec150683121 -rdynamic 
+make[1]: Leaving directory `/home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceIdentification/release/CMakeFiles/CMakeTmp'
+
+
+    Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:1cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:1cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:1cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:1cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:1cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:1cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:1cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:1cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:1cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:1cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+
+
+Detecting CXX [-std=c++11] compiler features compiled with the following output:
+Change Dir: /home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceIdentification/release/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2686368041/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2686368041.dir/build.make CMakeFiles/cmTryCompileExec2686368041.dir/build
+make[1]: Entering directory `/home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceIdentification/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceIdentification/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2686368041.dir/feature_tests.cxx.o
+/home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/bin/arm-tanxun-linux-gnueabi/arm-tanxun-linux-gnueabi-g++   -march=armv7-a -mfloat-abi=hard -mfpu=neon -mtune=cortex-a9 --sysroot=/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi   -O2 -pipe -g -feliminate-unused-debug-types     -std=c++11 -o CMakeFiles/cmTryCompileExec2686368041.dir/feature_tests.cxx.o -c /home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceIdentification/release/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTryCompileExec2686368041
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2686368041.dir/link.txt --verbose=1
+/home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/bin/arm-tanxun-linux-gnueabi/arm-tanxun-linux-gnueabi-g++   -march=armv7-a -mfloat-abi=hard -mfpu=neon -mtune=cortex-a9 --sysroot=/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi   -O2 -pipe -g -feliminate-unused-debug-types     -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed  CMakeFiles/cmTryCompileExec2686368041.dir/feature_tests.cxx.o  -o cmTryCompileExec2686368041 -rdynamic 
+make[1]: Leaving directory `/home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceIdentification/release/CMakeFiles/CMakeTmp'
+
+
+    Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:0cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:0cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:0cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:0cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:0cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:0cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:0cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:0cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:0cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:0cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+
+
+Detecting CXX [-std=c++98] compiler features compiled with the following output:
+Change Dir: /home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceIdentification/release/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2917759621/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2917759621.dir/build.make CMakeFiles/cmTryCompileExec2917759621.dir/build
+make[1]: Entering directory `/home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceIdentification/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceIdentification/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2917759621.dir/feature_tests.cxx.o
+/home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/bin/arm-tanxun-linux-gnueabi/arm-tanxun-linux-gnueabi-g++   -march=armv7-a -mfloat-abi=hard -mfpu=neon -mtune=cortex-a9 --sysroot=/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi   -O2 -pipe -g -feliminate-unused-debug-types     -std=c++98 -o CMakeFiles/cmTryCompileExec2917759621.dir/feature_tests.cxx.o -c /home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceIdentification/release/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTryCompileExec2917759621
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2917759621.dir/link.txt --verbose=1
+/home/libceb/1234/sdk/toolchain/sysroots/x86_64-tanxunsdk-linux/usr/bin/arm-tanxun-linux-gnueabi/arm-tanxun-linux-gnueabi-g++   -march=armv7-a -mfloat-abi=hard -mfpu=neon -mtune=cortex-a9 --sysroot=/home/libceb/1234/sdk/toolchain/sysroots/cortexa9hf-vfp-neon-tanxun-linux-gnueabi   -O2 -pipe -g -feliminate-unused-debug-types     -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed  CMakeFiles/cmTryCompileExec2917759621.dir/feature_tests.cxx.o  -o cmTryCompileExec2917759621 -rdynamic 
+make[1]: Leaving directory `/home/libceb/1234/sdk/customers/tumin/apps/FaceDAI/FaceIdentification/release/CMakeFiles/CMakeTmp'
+
+
+    Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:0cxx_alias_templates
+    Feature record: CXX_FEATURE:0cxx_alignas
+    Feature record: CXX_FEATURE:0cxx_alignof
+    Feature record: CXX_FEATURE:0cxx_attributes
+    Feature record: CXX_FEATURE:0cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:0cxx_auto_type
+    Feature record: CXX_FEATURE:0cxx_binary_literals
+    Feature record: CXX_FEATURE:0cxx_constexpr
+    Feature record: CXX_FEATURE:0cxx_contextual_conversions
+    Feature record: CXX_FEATURE:0cxx_decltype
+    Feature record: CXX_FEATURE:0cxx_decltype_auto
+    Feature record: CXX_FEATURE:0cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:0cxx_default_function_template_args
+    Feature record: CXX_FEATURE:0cxx_defaulted_functions
+    Feature record: CXX_FEATURE:0cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:0cxx_delegating_constructors
+    Feature record: CXX_FEATURE:0cxx_deleted_functions
+    Feature record: CXX_FEATURE:0cxx_digit_separators
+    Feature record: CXX_FEATURE:0cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:0cxx_explicit_conversions
+    Feature record: CXX_FEATURE:0cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:0cxx_extern_templates
+    Feature record: CXX_FEATURE:0cxx_final
+    Feature record: CXX_FEATURE:0cxx_func_identifier
+    Feature record: CXX_FEATURE:0cxx_generalized_initializers
+    Feature record: CXX_FEATURE:0cxx_generic_lambdas
+    Feature record: CXX_FEATURE:0cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:0cxx_inline_namespaces
+    Feature record: CXX_FEATURE:0cxx_lambdas
+    Feature record: CXX_FEATURE:0cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:0cxx_local_type_template_args
+    Feature record: CXX_FEATURE:0cxx_long_long_type
+    Feature record: CXX_FEATURE:0cxx_noexcept
+    Feature record: CXX_FEATURE:0cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:0cxx_nullptr
+    Feature record: CXX_FEATURE:0cxx_override
+    Feature record: CXX_FEATURE:0cxx_range_for
+    Feature record: CXX_FEATURE:0cxx_raw_string_literals
+    Feature record: CXX_FEATURE:0cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:0cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:0cxx_return_type_deduction
+    Feature record: CXX_FEATURE:0cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:0cxx_rvalue_references
+    Feature record: CXX_FEATURE:0cxx_sizeof_member
+    Feature record: CXX_FEATURE:0cxx_static_assert
+    Feature record: CXX_FEATURE:0cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:0cxx_thread_local
+    Feature record: CXX_FEATURE:0cxx_trailing_return_types
+    Feature record: CXX_FEATURE:0cxx_unicode_literals
+    Feature record: CXX_FEATURE:0cxx_uniform_initialization
+    Feature record: CXX_FEATURE:0cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:0cxx_user_literals
+    Feature record: CXX_FEATURE:0cxx_variable_templates
+    Feature record: CXX_FEATURE:0cxx_variadic_macros
+    Feature record: CXX_FEATURE:0cxx_variadic_templates
