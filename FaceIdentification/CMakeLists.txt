@@ -18,6 +18,9 @@ endif (CMAKE_SYSTEM_NAME MATCHES "Darwin")
 
 set(VIPLNET_INCLUDE_DIR ${PROJECT_SOURCE_DIR}/include)
 set(VIPLNET_SRC_DIR ${PROJECT_SOURCE_DIR}/src)
+
+
+
 # set __VIOL_LOG__ macro
 # add_definitions(-D__VIPL_LOG__)
 
