@@ -5,6 +5,10 @@ project (facev_lib)
 set (VIPLNET_VERSION_MAJOR 4)
 set (VIPLNET_VERSION_MINOR 5)
 
+set(CMAKE_EXE_LINKER_FLAGS "")
+set(CMAKE_MODULE_LINKER_FLAGS "")
+set(CMAKE_SHARED_LINKER_FLAGS "")
+
 set(CMAKE_BUILD_TYPE "Release")
 set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS}  -mfpu=neon -std=c++11 -O2 -g -ggdb")	#-sse=-msse4.2
 set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS} -mfpu=neon -std=c++11 -O2")	#-sse=-msse4.2

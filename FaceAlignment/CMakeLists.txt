@@ -5,6 +5,10 @@ project(facea_lib)
 # Build options
 option(BUILD_EXAMPLES  "Set to ON to build examples"  ON)
 
+set(CMAKE_EXE_LINKER_FLAGS "")
+set(CMAKE_MODULE_LINKER_FLAGS "")
+set(CMAKE_SHARED_LINKER_FLAGS "")
+
 # Use C++11
 #set(CMAKE_CXX_STANDARD 11)
 #set(CMAKE_CXX_STANDARD_REQUIRED ON)
