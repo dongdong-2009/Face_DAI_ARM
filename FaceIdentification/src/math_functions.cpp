@@ -30,7 +30,6 @@
  */
 
 #include "math_functions.h"
-
 #include <cstdint>
 #ifdef X86SYS
 #include "xmmintrin.h"

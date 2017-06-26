@@ -20,7 +20,7 @@ ImageData gallery_src_data_gray;
 ImageData gallery_dst_data_color;
 ImageData gallery_dst_data_gray;
 
-//int Get_Image_Data(char *img, ImageData& img_color,ImageData& img_gray);
+
 static void Face_Rec_Extract_callback1(int state,int FaceNum,float* img_fea);
 static void Face_Rec_Extract_callback2(int state,int FaceNum,float* img_fea);
 static void Face_Rec_Extract_callback3(int state,int FaceNum,std::vector<seeta::FaceInfo> face);
@@ -105,8 +105,8 @@ int main(int argc, char *argv[])
 	gallery_fea = new float[2048];           
 	probe_fea = new float[2048]; 
 
-        Face_Rec_Extract(1,gallery_src_data_color,gallery_src_data_gray,gallery_fea,Face_Rec_Extract_callback1);
-        Face_Rec_Extract(2,gallery_dst_data_color,gallery_dst_data_gray,probe_fea,Face_Rec_Extract_callback2);	
+	Face_Rec_Extract(1,gallery_src_data_color,gallery_src_data_gray,gallery_fea,Face_Rec_Extract_callback1);
+	Face_Rec_Extract(2,gallery_dst_data_color,gallery_dst_data_gray,probe_fea,Face_Rec_Extract_callback2);	
 	Face_Rec_Detect(3,gallery_src_data_color,gallery_src_data_gray,Face_Rec_Extract_callback3);
 	Face_Rec_Detect(4,gallery_dst_data_color,gallery_dst_data_gray,Face_Rec_Extract_callback4);
 
