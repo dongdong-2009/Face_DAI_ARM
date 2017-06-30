@@ -2,7 +2,8 @@
 #include <iostream>
 #include <fstream>
 #include <sstream>
-#include <conio.h>
+//only windows
+//#include <conio.h>
 #include <unistd.h>
 
 #include "opencv2/core/version.hpp"
@@ -98,8 +99,8 @@ int main(int argc, char *argv[])
 
 	Face_Rec_Extract(1,gallery_src_data_color,gallery_src_data_gray,gallery_fea,Face_Rec_Extract_callback1);
 	Face_Rec_Extract(2,gallery_dst_data_color,gallery_dst_data_gray,probe_fea,Face_Rec_Extract_callback2);	
-	Face_Rec_Detect(3,gallery_src_data_color,gallery_src_data_gray,Face_Rec_Extract_callback3);
-	Face_Rec_Detect(4,gallery_dst_data_color,gallery_dst_data_gray,Face_Rec_Extract_callback4);
+	//Face_Rec_Detect(3,gallery_src_data_color,gallery_src_data_gray,Face_Rec_Extract_callback3);
+	//Face_Rec_Detect(4,gallery_dst_data_color,gallery_dst_data_gray,Face_Rec_Extract_callback4);
 
 	while(1)
 	{
@@ -124,6 +125,7 @@ int main(int argc, char *argv[])
 	std::cout << "two picture detect successfully"<<endl;
 	std::cout << "demo is over, press any key to exit!!!"<<endl;
 	
-	getch();
+	//getch();
+	//only windows
 	return 0;
 }
