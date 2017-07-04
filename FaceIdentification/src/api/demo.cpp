@@ -34,6 +34,10 @@ void Face_Rec_Extract_callback1(int state,int FaceNum,float* img_fea)
 	{
 		std::cout << "picture 1 face num is:"<<FaceNum <<endl;
 	}
+	else if(state==-1)
+	{
+		std::cout << "No face for Picture 1" <<endl;
+	}
 }
 void Face_Rec_Extract_callback2(int state,int FaceNum,float* img_fea)
 {
@@ -41,13 +45,19 @@ void Face_Rec_Extract_callback2(int state,int FaceNum,float* img_fea)
 	{
 		std::cout << "picture 2 face num is:"<<FaceNum <<endl;
 	}
+	else if(state==-1)
+	{
+		std::cout << "No face for Picture 2" <<endl;
+	}
 }
 void Face_Rec_Extract_callback3(int state,int FaceNum,std::vector<seeta::FaceInfo> face)
 {
 	if(state==0)
 	{
 		vector<seeta::FaceInfo>::iterator it=face.begin();
-		std::cout << "picture 1 detct score is: "<<(*it).score<<endl;
+		std::cout << "picture 1 detect faces:"<<FaceNum<<endl;
+	} else {
+		std::cout << "Face_Rec_Extract_callback3:"<<state <<endl;
 	}
 }
 void Face_Rec_Extract_callback4(int state,int FaceNum,std::vector<seeta::FaceInfo> face)
@@ -55,8 +65,10 @@ void Face_Rec_Extract_callback4(int state,int FaceNum,std::vector<seeta::FaceInf
 	if(state==0)
 	{
 		vector<seeta::FaceInfo>::iterator it=face.begin();
-		std::cout << "picture 2 detect score is:"<<(*it).score<<endl;		
-	}	
+		std::cout << "picture 2 detect faces:"<<FaceNum<<endl;
+	} else {
+		std::cout << "Face_Rec_Extract_callback4:"<<state <<endl;
+	}
 }
 int main(int argc, char *argv[]) 
 {
@@ -97,17 +109,18 @@ int main(int argc, char *argv[])
 	gallery_fea = new float[2048];           
 	probe_fea = new float[2048]; 
 
-	Face_Rec_Extract(1,gallery_src_data_color,gallery_src_data_gray,gallery_fea,Face_Rec_Extract_callback1);
-	Face_Rec_Extract(2,gallery_dst_data_color,gallery_dst_data_gray,probe_fea,Face_Rec_Extract_callback2);	
-	//Face_Rec_Detect(3,gallery_src_data_color,gallery_src_data_gray,Face_Rec_Extract_callback3);
-	//Face_Rec_Detect(4,gallery_dst_data_color,gallery_dst_data_gray,Face_Rec_Extract_callback4);
+	
+	Face_Rec_Extract(0,gallery_src_data_color,gallery_src_data_gray,gallery_fea,Face_Rec_Extract_callback1);
+	Face_Rec_Extract(1,gallery_dst_data_color,gallery_dst_data_gray,probe_fea,Face_Rec_Extract_callback2);	
+	Face_Rec_Detect(0,gallery_src_data_color,gallery_src_data_gray,Face_Rec_Extract_callback3);
+	Face_Rec_Detect(1,gallery_dst_data_color,gallery_dst_data_gray,Face_Rec_Extract_callback4);
 
 	while(1)
 	{
-		if((Face_Rec_Current_Step(1)==FACE_REC_STEP_IDLE)
+		if((Face_Rec_Current_Step(0)==FACE_REC_STEP_IDLE)
+		&&(Face_Rec_Current_Step(1)==FACE_REC_STEP_IDLE)
 		&&(Face_Rec_Current_Step(2)==FACE_REC_STEP_IDLE)
-		&&(Face_Rec_Current_Step(3)==FACE_REC_STEP_IDLE)
-		&&(Face_Rec_Current_Step(4)==FACE_REC_STEP_IDLE))
+		&&(Face_Rec_Current_Step(3)==FACE_REC_STEP_IDLE))
 		{
 			break;
 		}
