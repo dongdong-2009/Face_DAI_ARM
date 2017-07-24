@@ -7,6 +7,7 @@
 #include <stdio.h>
 #include <unistd.h>
 #include "math_functions.h"
+
 #include "sse2neon.h"
 
 #define TEST(major, minor) major##_##minor##_Tester()
