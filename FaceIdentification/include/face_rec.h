@@ -7,9 +7,7 @@
 #include "math_functions.h"
 
 using namespace seeta;
-
-
-using namespace seeta;
+using namespace std;
 
 
 #define Face_Rec_Pthread_MAX_NUM    64
