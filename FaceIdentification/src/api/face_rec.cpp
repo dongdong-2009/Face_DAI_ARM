@@ -28,6 +28,7 @@ static pthread_t thread;
 static int thread_run = 0;
 static pthread_mutex_t mutex;
 static pthread_cond_t cond;
+static int limit = 0;
 
 struct Face_Rec_Imp_ST{
 	int ChannelNum;
@@ -277,6 +278,15 @@ int Face_Rec_Extract(int ChannelID,ImageData img_data_color,ImageData img_data_g
 {
     int ret=0;
 
+    if (limit < 1000) {
+        limit++;
+    }
+    else {
+        return 0;
+    }
+    
+
+
     if(ChannelID>=Face_Rec_ACT_NUM || ChannelID < 0) {
         return -2;
     }
@@ -391,7 +401,7 @@ int Face_Rec_Deinit()
 
         pthread_mutex_lock(&mutex);
         memset(MAIN_ST,0,sizeof(MAIN_ST));
-        Face_Rec_ACT_NUM=0;
+        
         pthread_mutex_unlock(&mutex);
         
         thread_run = 0;
@@ -412,6 +422,8 @@ int Face_Rec_Deinit()
 	   delete face_recognizer;
 	   face_recognizer=NULL;
     }
+
+    Face_Rec_ACT_NUM=-1;
 }
 
 Face_Rec_Step_EM Face_Rec_Current_Step(int ChannelID)
