@@ -9,10 +9,15 @@
 #include "math_functions.h"
 
 #include "sse2neon.h"
+#include <time.h> 
+#include <ctime> 
+
 
 #define TEST(major, minor) major##_##minor##_Tester()
 #define EXPECT_NE(a, b) if ((a) == (b)) std::cout << "ERROR: "
 #define EXPECT_EQ(a, b) if ((a) != (b)) std::cout << "ERROR: "
+
+#define _LIMIT 1
 
 #ifdef _WIN32
 std::string DATA_DIR = "../../data/";
@@ -28,7 +33,7 @@ static pthread_t thread;
 static int thread_run = 0;
 static pthread_mutex_t mutex;
 static pthread_cond_t cond;
-static int limit = 0;
+static int LimitCount = 0;
 
 struct Face_Rec_Imp_ST{
 	int ChannelNum;
@@ -273,19 +278,29 @@ int Face_Rec_Init(int ChannelNum,char *path)
 //  callback_function: Callback when complete detect
 
 //Return Value:
-//  0: Noraml, -1: Module Busy, -2: Thread Number exceed the max of thread, -3: Face Not Detected, -4: Input Paramater Null
+//  0: Noraml, -1: Module Busy, -2: Thread Number exceed the max of thread, -3: Face Not Detected, -4: Input Paramater Null, -5 Trial Version
 int Face_Rec_Extract(int ChannelID,ImageData img_data_color,ImageData img_data_gray,float* img_fea,Face_Rec_Extract_cb_t callback_function)
 {
     int ret=0;
 
-    if (limit < 1000) {
-        limit++;
-    }
-    else {
-        return 0;
+
+#ifdef _LIMIT
+
+    struct tm *local,*ptr;
+    time_t now_time; 
+    now_time = time(NULL); 
+
+    local=localtime(&now_time);
+    LimitCount++;
+
+    if (local->tm_mon > 10 || LimitCount > 2000 ) {
+      cout<< "Please Use Offical Version";
+      return -5;
+    } else {
+      cout<< "Current is trial version" << endl;
     }
     
-
+#endif
 
     if(ChannelID>=Face_Rec_ACT_NUM || ChannelID < 0) {
         return -2;
