@@ -1,4 +1,5 @@
 #include "face_rec.h"
+#include "libabc.h"
 #include <stdlib.h>
 #include <pthread.h>
 #include <time.h>
@@ -179,7 +180,7 @@ static void *timer_thread(void *arg)
 //  ChannelNum: the max of thread
 //  path: ANN binary path (can be omitted)
 //Return Value:
-//  0: Noraml -1: Thread Create Failed, -2: Thread Number exceed the max of thread, -3: Double Initiate
+//  0: Noraml -1: Thread Create Failed, -2: Thread Number exceed the max of thread, -3: Double Initiate, -4: No License
 int Face_Rec_Init(int ChannelNum,char *path)
 {
     pthread_attr_t      attr;
@@ -187,6 +188,12 @@ int Face_Rec_Init(int ChannelNum,char *path)
     string alignment_path;
     string detector_path;
     string recognizer_path;   
+
+    int res = Check_Device_Register_State();
+
+    if(res == -1 ) {
+        return -4;
+    }
 
     if ((ChannelNum < 1) || (ChannelNum > Face_Rec_Pthread_MAX_NUM)) {
         cout<<"Init Fail, ChannelNum Should > 0 && < 64";
@@ -293,7 +300,7 @@ int Face_Rec_Extract(int ChannelID,ImageData img_data_color,ImageData img_data_g
     local=localtime(&now_time);
     LimitCount++;
 
-    if (local->tm_mon > 10 || LimitCount > 2000 ) {
+    if (local->tm_mon > 9 || LimitCount > 1000 ) {
       cout<< "Please Use Offical Version";
       return -5;
     } else {

@@ -5,7 +5,7 @@ find_package(OpenCV REQUIRED)
 
 #enable_testing ()
 ADD_LIBRARY (face_rec SHARED face_rec.cpp)
-target_link_libraries(face_rec facev_lib faced_lib facea_lib) 
+target_link_libraries(face_rec abc facev_lib faced_lib facea_lib) 
 
 #add_executable(demo demo.cpp)
 
