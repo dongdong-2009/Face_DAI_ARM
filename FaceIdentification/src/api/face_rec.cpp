@@ -29,6 +29,7 @@ std::string MODEL_DIR = "../model/";
 #endif
 using namespace std;
 using namespace seeta;
+using namespace cv;
 
 static pthread_t thread;
 static int thread_run = 0;
@@ -189,11 +190,13 @@ int Face_Rec_Init(int ChannelNum,char *path)
     string detector_path;
     string recognizer_path;   
 
+/*
     int res = Check_Device_Register_State();
 
     if(res == -1 ) {
         return -4;
     }
+*/
 
     if ((ChannelNum < 1) || (ChannelNum > Face_Rec_Pthread_MAX_NUM)) {
         cout<<"Init Fail, ChannelNum Should > 0 && < 64";
@@ -286,7 +289,7 @@ int Face_Rec_Init(int ChannelNum,char *path)
 
 //Return Value:
 //  0: Noraml, -1: Module Busy, -2: Thread Number exceed the max of thread, -3: Face Not Detected, -4: Input Paramater Null, -5 Trial Version
-int Face_Rec_Extract(int ChannelID,ImageData img_data_color,ImageData img_data_gray,float* img_fea,Face_Rec_Extract_cb_t callback_function)
+int Face_Rec_Extract(int ChannelID,Mat img_data_color,Mat img_data_gray,float* img_fea,Face_Rec_Extract_cb_t callback_function)
 {
     int ret=0;
 
@@ -315,18 +318,32 @@ int Face_Rec_Extract(int ChannelID,ImageData img_data_color,ImageData img_data_g
     if((img_data_color.data == NULL)||(img_data_gray.data == NULL)|| (img_fea == NULL)) {
         return -4;
     }
+
+    ImageData gallery_data_color;
+    ImageData gallery_data_gray;
+    gallery_data_color.data = img_data_color.data;
+    gallery_data_color.width = img_data_color.cols;
+    gallery_data_color.height = img_data_color.rows;
+    gallery_data_color.num_channels = img_data_color.channels();
+
+    gallery_data_gray.data = img_data_gray.data;
+    gallery_data_gray.width = img_data_gray.cols;
+    gallery_data_gray.height = img_data_gray.rows;
+    gallery_data_gray.num_channels = img_data_gray.channels();
+
+
 // single thread
     if(Face_Rec_ACT_NUM == 1 && ChannelID == 0) {
         
         std::vector<seeta::FaceInfo> gallery_faces;
-        gallery_faces = detector->Detect(img_data_gray);
+        gallery_faces = detector->Detect(gallery_data_gray);
         int32_t gallery_face_num = static_cast<int32_t>(gallery_faces.size());
         if (gallery_face_num == 0) {
             return -3;
         }
         seeta::FacialLandmark gallery_points[5];
-        point_detector->PointDetectLandmarks(img_data_gray, gallery_faces[0], gallery_points);   
-        face_recognizer->ExtractFeatureWithCrop(img_data_color, gallery_points, img_fea); 
+        point_detector->PointDetectLandmarks(gallery_data_gray, gallery_faces[0], gallery_points);   
+        face_recognizer->ExtractFeatureWithCrop(gallery_data_color, gallery_points, img_fea); 
         return 0;
     }
 
@@ -338,8 +355,8 @@ int Face_Rec_Extract(int ChannelID,ImageData img_data_color,ImageData img_data_g
     if(ret==0)
     {
         MAIN_ST[ChannelID].Step=FACE_REC_STEP_EXTR;
-        MAIN_ST[ChannelID].img_data_color=img_data_color;
-        MAIN_ST[ChannelID].img_data_gray=img_data_gray;
+        MAIN_ST[ChannelID].img_data_color=gallery_data_color;
+        MAIN_ST[ChannelID].img_data_gray=gallery_data_gray;
         MAIN_ST[ChannelID].img_fea_result=img_fea;
         MAIN_ST[ChannelID].callback_function1=callback_function;
     }
@@ -355,7 +372,7 @@ int Face_Rec_Extract(int ChannelID,ImageData img_data_color,ImageData img_data_g
 //  callback_function: Callback when complete detect
 //Return Value:
 //  0: Noraml, -1: Module Busy, -2: Thread Number exceed the max of thread, -3: Face Not Detected, -4: Input Param is Null
-int Face_Rec_Detect(int ChannelID,ImageData img_data_color,ImageData img_data_gray,vector<FaceInfo> & res_faces, Face_Rec_Detect_cb_t callback_function)
+int Face_Rec_Detect(int ChannelID,Mat img_data_color,Mat img_data_gray,std::vector<seeta::FaceInfo> & res_faces, Face_Rec_Detect_cb_t callback_function)
 {
     int ret=0;
     if(ChannelID>=Face_Rec_ACT_NUM || ChannelID < 0) {
@@ -364,11 +381,24 @@ int Face_Rec_Detect(int ChannelID,ImageData img_data_color,ImageData img_data_gr
     if((img_data_color.data == NULL)||(img_data_gray.data == NULL)){
         return -4;
     }
+
+    ImageData gallery_data_color;
+    ImageData gallery_data_gray;
+    gallery_data_color.data = img_data_color.data;
+    gallery_data_color.width = img_data_color.cols;
+    gallery_data_color.height = img_data_color.rows;
+    gallery_data_color.num_channels = img_data_color.channels();
+
+    gallery_data_gray.data = img_data_gray.data;
+    gallery_data_gray.width = img_data_gray.cols;
+    gallery_data_gray.height = img_data_gray.rows;
+    gallery_data_gray.num_channels = img_data_gray.channels();
+
 //single thread
 
     if((Face_Rec_ACT_NUM == 1) && (ChannelID == 0)) {
 		std::vector<seeta::FaceInfo> gallery_faces;
-		gallery_faces = detector->Detect(img_data_gray);
+		gallery_faces = detector->Detect(gallery_data_gray);
 		int32_t gallery_face_num = static_cast<int32_t>(gallery_faces.size());		
 		if(gallery_face_num >0)
         {
@@ -388,8 +418,8 @@ int Face_Rec_Detect(int ChannelID,ImageData img_data_color,ImageData img_data_gr
     if(ret==0)
     {    
         MAIN_ST[ChannelID].Step=FACE_REC_STEP_DECT;
-        MAIN_ST[ChannelID].img_data_color=img_data_color;
-        MAIN_ST[ChannelID].img_data_gray=img_data_gray;
+        MAIN_ST[ChannelID].img_data_color=gallery_data_color;
+        MAIN_ST[ChannelID].img_data_gray=gallery_data_gray;
         MAIN_ST[ChannelID].callback_function2=callback_function;
     }
     pthread_mutex_unlock(&mutex);
