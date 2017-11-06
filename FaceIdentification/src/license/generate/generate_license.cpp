@@ -8,7 +8,6 @@
 #include <sys/types.h>
 #include <dirent.h>
 #include <sys/stat.h>
-
 #ifdef _WIN32
 #include <objbase.h>
 #else
@@ -50,7 +49,42 @@ unsigned int MakePrivatedKeyd( unsigned int uiP, unsigned int uiQ );
 unsigned int MakePairkey( unsigned int uiP, unsigned int uiQ, unsigned int uiD );
 void rsa_encrypt( int n, int e, char *mw, int mLength, int *&cw );
 void rsa_decrypt( int n, int d, int *&cw, int cLength, char *mw );
+int New_Key_File(char *uuid,int *key,int leng);
 
+static char* itoa(int num,char*str,int radix)
+{
+	/*索引表*/
+	char index[]="0123456789ABCDEF";
+	unsigned unum;/*中间变量*/
+	int i=0,j,k;
+	/*确定unum的值*/
+	if(radix==10&&num<0)/*十进制负数*/
+	{
+	    unum=(unsigned)-num;
+	    str[i++]='-';
+	}
+	else 
+	    unum=(unsigned)num;/*其他情况*/
+	/*转换*/
+	do{
+	    str[i++]=index[unum%(unsigned)radix];
+	    unum/=radix;
+	}while(unum);
+	str[i]='\0';
+	/*逆序*/
+	if(str[0]=='-')
+	    k=1;/*十进制负数*/
+	else
+	    k=0;
+	char temp;
+	for(j=k;j<=(i-1)/2;j++)
+	{
+	    temp=str[j];
+	    str[j]=str[i-1+k-j];
+	    str[i-1+k-j]=temp;
+	}
+	return str;
+}
 
 void outputkey()
 {
@@ -301,6 +335,48 @@ mw[i] = (char)temInt;
 }
 }
 
+int New_Key_File(char *uuid,int *key,int leng)
+{
+    struct stat file_stat;
+    int ret;
+    char dirpath[512];
+    FILE *file_stream = NULL;
+
+    strncpy(dirpath, uuid, leng);
+    ret = stat(dirpath, &file_stat);//检查文件夹状态  
+    if(ret<0)  
+    {  
+        ret = mkdir(dirpath, 0775);//创建文件夹  
+        if(ret < 0)  
+        {  
+            printf("Could not create directory \'%s\' \n",  
+            dirpath);  
+            return -1;  
+        }
+    }
+
+    string key_path;
+    key_path=dirpath;
+    key_path+="/.Key"; 
+
+
+    char key_string[512];
+    for(int i=0;i<leng;i++)
+    {	
+        itoa((*key),key_string+i*5,10);
+	key+=1;
+    }
+
+    file_stream = fopen(key_path.c_str(), "w+");
+    if(NULL == file_stream)
+        return -1;
+    char end='\n';
+    fwrite(key_string, sizeof(char),leng*5,file_stream);
+    fwrite(&end, sizeof(char),1,file_stream);
+    if(NULL != file_stream)
+	fclose(file_stream);
+    return 0;
+}
 
 
 //! 程序主函数
@@ -345,6 +421,8 @@ int main( int argc, char **argv )
         printf("%05d",cw[j]);
     }
     printf(")\n");
+    New_Key_File(inBuffer,cw,strlen(argv[1]));
+
 
     free(inBuffer);
     free(cw);
