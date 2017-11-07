@@ -18,7 +18,7 @@
 #define EXPECT_NE(a, b) if ((a) == (b)) std::cout << "ERROR: "
 #define EXPECT_EQ(a, b) if ((a) != (b)) std::cout << "ERROR: "
 
-#define _LIMIT 1
+//#define _LIMIT 1
 
 #ifdef _WIN32
 std::string DATA_DIR = "../../data/";
