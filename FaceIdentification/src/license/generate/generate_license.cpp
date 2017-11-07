@@ -9,9 +9,9 @@
 #include <dirent.h>
 #include <sys/stat.h>
 #ifdef _WIN32
-#include <objbase.h>
+//#include <objbase.h>
 #else
-#include <uuid/uuid.h>
+//#include <uuid/uuid.h>
 #endif
 
 using namespace std;
@@ -70,6 +70,8 @@ static char* itoa(int num,char*str,int radix)
 	    str[i++]=index[unum%(unsigned)radix];
 	    unum/=radix;
 	}while(unum);
+
+	i=5;
 	str[i]='\0';
 	/*逆序*/
 	if(str[0]=='-')
@@ -339,7 +341,7 @@ int New_Key_File(char *uuid,int *key,int leng)
 {
     struct stat file_stat;
     int ret;
-    char dirpath[512];
+    char dirpath[512]="";
     FILE *file_stream = NULL;
 
     strncpy(dirpath, uuid, leng);
@@ -360,7 +362,8 @@ int New_Key_File(char *uuid,int *key,int leng)
     key_path+="/.Key"; 
 
 
-    char key_string[512];
+    char key_string[512]="";
+    memset(key_string,'0',leng*5+1);
     for(int i=0;i<leng;i++)
     {	
         itoa((*key),key_string+i*5,10);
