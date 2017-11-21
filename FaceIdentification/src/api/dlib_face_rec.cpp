@@ -27,7 +27,7 @@ using namespace std;
 using namespace cv;
 using namespace seeta;
 
-//#define _LIMIT 1
+#define _LIMIT 1
 
 // ----------------------------------------------------------------------------------------
 
@@ -89,6 +89,14 @@ int Face_Rec_Init(int ChannelNum,char *path)
     string sp_path;
     string net_path;
     string detector_path;  
+
+/*
+    int res = Check_Device_Register_State();
+
+    if(res == -1 ) {
+        return -4;
+    }
+*/
 
     if(path!=NULL)
     {
@@ -152,7 +160,7 @@ int Face_Rec_Extract(int ChannelID,Mat img_data_color,Mat img_data_gray,float* i
     local=localtime(&now_time);
     LimitCount++;
 
-    if (local->tm_mon > 9 || LimitCount > 1000 ) {
+    if ((local->tm_year > 117 && local->tm_mon > 1) || LimitCount > 1000 ) {
       cout<< "Please Use Offical Version";
       return -5;
     } else {
